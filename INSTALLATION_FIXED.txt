@@ -1,0 +1,76 @@
+================================================================================
+                    INSTALLATION SCRIPT FIXED
+================================================================================
+
+ISSUE FIXED: "pip is not recognized" error
+
+CAUSE: pip was not in PATH after activating virtual environment
+
+SOLUTION: Changed all pip commands to use "python -m pip"
+
+================================================================================
+                    WHAT WAS CHANGED
+================================================================================
+
+Before:
+  pip install package
+
+After:
+  python -m pip install package
+
+This works even if pip is not in PATH because it uses Python's module system.
+
+================================================================================
+                    NOW YOU CAN RUN
+================================================================================
+
+Run: 1_INSTALL_EVERYTHING.bat
+
+The script will now:
+  ✓ Use "python -m pip" instead of "pip"
+  ✓ Work even if pip is not in PATH
+  ✓ Install all packages correctly
+  ✓ Handle timeouts better
+  ✓ Retry on failures
+
+================================================================================
+                    WHAT TO EXPECT
+================================================================================
+
+Step 1: Downloads Python 3.11.9
+Step 2: Installs Python 3.11.9
+Step 3: Creates/uses virtual environment
+Step 4: Installs GPU PyTorch (may take 5-10 minutes)
+Step 5: Installs dependencies (may take 3-5 minutes)
+Step 6: Verifies GPU detection
+
+Total time: 15-20 minutes
+
+================================================================================
+                    IF YOU STILL GET ERRORS
+================================================================================
+
+Network timeout errors:
+  • Check internet connection
+  • Script will retry automatically
+  • May take longer on slow connections
+
+"File in use" errors:
+  • Close all Command Prompt windows
+  • Run: FIX_VENV_LOCKED.bat
+  • Try again
+
+Permission errors:
+  • Run as Administrator
+  • Right-click > Run as administrator
+
+================================================================================
+                    READY TO START
+================================================================================
+
+1. Close all Command Prompt windows
+2. Run: 1_INSTALL_EVERYTHING.bat
+3. Wait for completion (15-20 minutes)
+4. Run: 2_TRAIN_MODEL.bat
+
+================================================================================

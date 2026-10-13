@@ -1,0 +1,14 @@
+# Core dependencies
+flask>=3.0.0
+flask-cors>=4.0.0
+ultralytics>=8.3.0
+opencv-python>=4.10.0
+pymongo>=4.10.0
+numpy>=1.26.0
+Pillow>=10.0.0
+reportlab>=4.0.0
+
+# PyTorch and torchvision (CPU version - for GPU, see install_gpu.bat)
+torch>=2.5.0
+torchvision>=0.20.0
+torchaudio>=2.5.0

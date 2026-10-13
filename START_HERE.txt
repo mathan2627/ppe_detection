@@ -1,0 +1,60 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                                                                            ║
+║                    SIMPLE 3-FILE SETUP                                     ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+IMPORTANT: Close all Command Prompt windows before starting!
+
+
+STEP 1: Install Everything
+---------------------------
+    1_INSTALL_EVERYTHING.bat
+
+    • Downloads Python 3.11.9
+    • Installs GPU PyTorch
+    • Sets up everything
+    • Time: 10-15 minutes
+
+    If you get "file in use" error:
+      - Close all terminals
+      - Run: FIX_VENV_LOCKED.bat
+      - Try again
+
+
+STEP 2: Train Model
+--------------------
+    2_TRAIN_MODEL.bat
+
+    • Trains PPE detection model
+    • Optimized for RTX 2050 (4GB)
+    • Time: 25-40 minutes
+
+
+STEP 3: Run Application
+------------------------
+    3_RUN_APP.bat
+
+    • Starts Flask server
+    • Opens at: http://localhost:5000
+    • Use your trained model
+
+
+TROUBLESHOOTING:
+----------------
+If you get "file in use" error:
+  1. Close ALL Command Prompt windows
+  2. Run: FIX_VENV_LOCKED.bat
+  3. Run: 1_INSTALL_EVERYTHING.bat again
+  4. When asked "recreate?", type: n
+
+
+READ: QUICK_FIX.txt for detailed help
+
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                                                                            ║
+║                    START WITH: 1_INSTALL_EVERYTHING.bat                    ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝

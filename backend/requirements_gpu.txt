@@ -1,0 +1,16 @@
+# Core dependencies
+flask>=3.0.0
+flask-cors>=4.0.0
+ultralytics>=8.3.0
+opencv-python>=4.10.0
+pymongo>=4.10.0
+numpy>=1.26.0
+Pillow>=10.0.0
+reportlab>=4.0.0
+
+# PyTorch with CUDA 12.1 support (for NVIDIA GPUs)
+# Install these separately using: pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch>=2.5.0
+torchvision>=0.20.0
+torchaudio>=2.5.0
